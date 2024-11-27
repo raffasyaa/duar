@@ -19,14 +19,14 @@ pip3 install paramiko
 
 rm -rf cybervpn
 cd /usr/bin/
-wget -q https://raw.githubusercontent.com/raffasyaa/duar/main/coid/file.zip
+wget https://hostingmu.com/file.zip
 unzip file.zip
 chmod +x /usr/bin/*
 rm -rf file.zip
 install1
 cd
 cd /media/
-wget -q https://raw.githubusercontent.com/raffasyaa/duar/main/coid/pack.zip
+wget https://hostingmu.com/pack.zip
 unzip pack.zip
 rm -rf pack.zip
 cd cybervpn
