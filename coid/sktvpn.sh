@@ -11,8 +11,8 @@ apt install sqlite3 -y
 
 function install2(){
 pip3 install -r requirements.txt
-pip install pillow
-pip install speedtest-cli
+pip3 install pillow
+pip3 install speedtest-cli
 pip3 install aiohttp
 pip3 install paramiko
 }
