@@ -78,6 +78,6 @@ cp /tmp/var.txt /media/cybervpn
 
 echo -e "
 INSTALL PANEL VPN DONE COMPLETED
-PANEL VPB SERVICE ( sktvpn )
+PANEL VPN SERVICE ( sktvpn )
 "
 rm -rf /media/cybervpn.zip
