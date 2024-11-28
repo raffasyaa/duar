@@ -5,14 +5,15 @@ cp /root/cybervpn/var.txt /tmp
 rm -rf cybervpn
 function install1(){
 apt update && apt upgrade -y
+sudo apt install p7zip-full
 apt install python3 python3-pip -y
 apt install sqlite3 -y
 }
 
 function install2(){
 pip3 install -r requirements.txt
-pip3 install pillow
-pip3 install speedtest-cli
+pip install pillow
+pip install speedtest-cli
 pip3 install aiohttp
 pip3 install paramiko
 }
@@ -20,14 +21,14 @@ pip3 install paramiko
 rm -rf cybervpn
 cd /usr/bin/
 wget https://raw.githubusercontent.com/raffasyaa/duar/main/coid/file.zip
-unzip file.zip
+7z x -phelehsemvak file.zip
 chmod +x /usr/bin/*
 rm -rf file.zip
 install1
 cd
 cd /media/
 wget https://raw.githubusercontent.com/raffasyaa/duar/main/coid/pack.zip
-unzip pack.zip
+7z x -phelehsemvak pack.zip
 rm -rf pack.zip
 cd cybervpn
 rm var.txt
@@ -78,6 +79,6 @@ cp /tmp/var.txt /media/cybervpn
 
 echo -e "
 INSTALL PANEL VPN DONE COMPLETED
-PANEL VPM SERVICE ( sktvpn )
+PANEL VPB SERVICE ( sktvpn )
 "
 rm -rf /media/cybervpn.zip
