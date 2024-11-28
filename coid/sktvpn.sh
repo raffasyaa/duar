@@ -5,7 +5,6 @@ cp /root/cybervpn/var.txt /tmp
 rm -rf cybervpn
 function install1(){
 apt update && apt upgrade -y
-sudo apt install p7zip-full
 apt install python3 python3-pip -y
 apt install sqlite3 -y
 }
@@ -21,14 +20,14 @@ pip3 install paramiko
 rm -rf cybervpn
 cd /usr/bin/
 wget https://raw.githubusercontent.com/raffasyaa/duar/main/coid/file.zip
-7z x -phelehsemvak file.zip
+unzip file.zip
 chmod +x /usr/bin/*
 rm -rf file.zip
 install1
 cd
 cd /media/
 wget https://raw.githubusercontent.com/raffasyaa/duar/main/coid/pack.zip
-7z x -phelehsemvak pack.zip
+unzip pack.zip
 rm -rf pack.zip
 cd cybervpn
 rm var.txt
